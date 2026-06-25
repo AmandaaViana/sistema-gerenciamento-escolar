@@ -123,3 +123,11 @@ Passo a Passo
   Após a inicialização correta no terminal, acesse via navegador:
 
       http://localhost:8080
+
+## Credenciais para Teste (Acesso Padrão)
+
+Como o sistema possui inicialização automática de dados, você pode utilizar os seguintes dados padrão para realizar o login inicial:
+
+* **Usuário:** admin
+
+* **Senha:** 123456
