@@ -32,7 +32,6 @@ public class DataLoader {
                 System.out.println("INICIOU DATALOADER");
                 System.out.println("USUARIO SALVO");
             }
-
         };
     }
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - Acesso Negado</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #7b1e1e, #c0392b);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            color:white;
+        }
+
+        .container{
+            text-align:center;
+            background:rgba(255,255,255,0.1);
+            padding:50px;
+            border-radius:20px;
+            backdrop-filter: blur(10px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            max-width:650px;
+            width:90%;
+        }
+
+        .icon{
+            font-size:70px;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:120px;
+            margin-bottom:10px;
+        }
+
+        h2{
+            font-size:32px;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:18px;
+            margin-bottom:30px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 30px;
+            background:white;
+            color:#c0392b;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        .info{
+            margin-top:25px;
+            font-size:14px;
+            color:#f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="icon">⛔</div>
+
+    <h1>403</h1>
+
+    <h2>Acesso Negado</h2>
+
+   <p>
+    Você está autenticado, porém não possui as permissões necessárias para acessar
+    esta página. O acesso a esta funcionalidade é restrito aos perfis
+    <strong>Administrador</strong> e <strong>Gerente</strong>, conforme as regras
+    de segurança configuradas no sistema.
+</p>
+
+    <a href="/view/alunos" class="btn">
+        Voltar para a Página Inicial
+    </a>
+
+    <div class="info">
+        Caso acredite que isso seja um erro, entre em contato com o administrador do sistema.
+    </div>
+
+</div>
+
+</body>
+</html>

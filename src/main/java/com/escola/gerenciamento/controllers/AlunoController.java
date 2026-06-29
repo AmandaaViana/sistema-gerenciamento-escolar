@@ -29,25 +29,6 @@ public class AlunoController {
     // ==========================================
     // LISTAR TODOS
     // ==========================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     @GetMapping
     public ResponseEntity<List<Aluno>> listarTodos() {

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>401 - Não Autorizado</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            color:white;
+        }
+
+        .container{
+            text-align:center;
+            background:rgba(255,255,255,0.1);
+            padding:50px;
+            border-radius:20px;
+            backdrop-filter: blur(10px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            max-width:600px;
+            width:90%;
+        }
+
+        h1{
+            font-size:120px;
+            margin-bottom:10px;
+        }
+
+        h2{
+            font-size:32px;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:18px;
+            margin-bottom:30px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 30px;
+            background:white;
+            color:#1e3c72;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+            background:#f1f1f1;
+        }
+
+        .icon{
+            font-size:70px;
+            margin-bottom:20px;
+        }
+
+        .info{
+            margin-top:25px;
+            font-size:14px;
+            color:#ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="icon">🔒</div>
+
+    <h1>401</h1>
+
+    <h2>Acesso Não Autorizado</h2>
+
+    <p>
+        Você não possui autorização para acessar esta página
+        ou sua sessão expirou.
+    </p>
+
+    <a href="/login" class="btn">
+        Ir para o Login
+    </a>
+
+    <div class="info">
+        Caso o problema persista, entre em contato com o administrador do sistema.
+    </div>
+
+</div>
+
+</body>
+</html>
