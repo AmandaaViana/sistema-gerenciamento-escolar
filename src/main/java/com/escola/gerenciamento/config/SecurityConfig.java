@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .requestMatchers(
                         "/gerente/**",
                         "/usuarios/**",
-                        "/cadastro-usuario/**"
+                        "/cadastro/**"
                 )
                 .hasAnyRole("ADMINISTRADOR", "GERENTE")
 
