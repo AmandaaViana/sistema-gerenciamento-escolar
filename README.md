@@ -77,6 +77,17 @@ Os relacionamentos entre as entidades foram implementados utilizando as anotaç�
   
 * Professores são vinculados a Disciplinas específicas para o lançamento e controle de notas.
 
+### Respostas HTTP
+
+Foram desenvolvidas páginas de erro personalizadas e dinâmicas utilizando **Thymeleaf** e **JavaScript**, garantindo que o usuário seja orientado corretamente em caso de falhas ou restrições de acesso:
+
+* **401 - Não Autorizado (`401.html`):** Exibido quando a sessão do usuário expira ou quando há uma tentativa de acesso sem autenticação prévia.
+* **403 - Acesso Negado (`403.html`):** Disparado pelo Spring Security quando um usuário autenticado tenta acessar uma rota que exige privilégios de **Administrador** ou **Gerente**.
+* **404 - Página Não Encontrada (`404.html`):** Captura URLs inválidas e conta com um script de **redirecionamento automático com contagem regressiva** de 6 segundos de volta para a listagem principal.
+* **500 - Erro Interno do Servidor (`500.html`):** Customizado especificamente para gerenciar falhas de integridade referencial no banco de dados. Informa ao usuário que a exclusão foi impedida para preservar os dados devido à ausência temporária do `ON DELETE CASCADE` na fase de desenvolvimento.
+
+---
+
 ## Configuração do Banco de Dados (MySQL)
 
 O sistema utiliza o MySQL como banco de dados relacional estável. Antes de iniciar a aplicação, certifique-se de possuir um servidor MySQL ativo e configure suas credenciais locais acessando o arquivo:
